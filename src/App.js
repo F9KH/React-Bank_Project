@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, {useState } from 'react';
 
-function App() {
+import Navbar from './components/Navbar';
+import InitialPage from './components/Initail';
+import OperationsPage from './components/Operation';
+import BreakdownPage from './components/Breakdown';
+
+const App = () => {
+  const [balance, setBalance] = useState(100);
+  const updateBalanceF = (transactionAmount) => {
+  const updateBalance = balance + transactionAmount
+   setBalance(updateBalance); 
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar balance={balance}/>
+      <Routes>
+        <Route path="/" element={<InitialPage />} />
+        <Route path="/operations" element={<OperationsPage updateBalance = {updateBalanceF} />} />
+        <Route path="/breakdown" element={<BreakdownPage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

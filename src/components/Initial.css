@@ -1,0 +1,114 @@
+.initial-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.initial-page h2 {
+  font-size: 2.5rem;
+  color: #0c0909;
+}
+
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.transaction-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.transaction-details {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.transaction-details span {
+  margin-right: 1rem;
+}
+
+
+
+.span{
+  font-weight: bold;
+}
+
+
+
+
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+.transaction-table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+
+.transaction-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Styling for alternating row colors */
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styling for deposit transactions */
+.transaction-row.deposit {
+  background-color: #eaffea;
+}
+
+/* Styling for withdrawal transactions */
+.transaction-row.withdrawal {
+  background-color: #ffeaea;
+}
+
+/* Styling for delete button */
+.delete-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c00;
+}
+
+
+
+
+

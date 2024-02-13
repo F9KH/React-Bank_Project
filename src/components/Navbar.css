@@ -1,0 +1,21 @@
+
+
+.navbar-container {
+    background-color: #3a88c7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .balance {
+    font-weight: bold;
+  }
+  

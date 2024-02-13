@@ -1,0 +1,108 @@
+ .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  opacity: 0;
+  transform: scale(0.9); 
+  animation: fadeInScale 0.5s ease-in-out forwards; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+ 
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.field-label {
+  width: 150px;
+  font-size: 1.2rem;
+  color: #333;
+  font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.field-input {
+  flex: 1;
+  padding: 0.8rem; 
+  font-size: 1.2rem;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+  
+
+  &:focus {
+    border-color: #db3434; 
+    box-shadow: 0 0 8px rgb(35, 22, 49); 
+  }
+}
+
+
+
+
+
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} 
+
+.deposit-button {
+  background-color: #34a853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ margin-left: 30%;
+
+  &:hover {
+    background-color: #2e8b57;
+  }
+}
+
+.add-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30%;
+
+  &:hover {
+    background-color: #c0392b;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+
+
